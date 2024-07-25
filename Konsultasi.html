@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Konsultasi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .user-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: #3498db;
+            border-radius: 50%;
+            font-size: 20px;
+            color: #ffffff;
+        }
+
+        .user-question {
+            padding-top: 20px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .discussion-container {
+            max-width: 600px;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-radius: 5px;
+        }
+        .questi
+        on-response {
+            font-size: 12px;
+            color: #888;
+        }
+
+        button {
+            background-color: #667bc6;
+            border-radius: 20px;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="image/logo.jpg" width="auto" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="font" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" id="font" aria-current="page" href="Artikel.html">Artikel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" id="font-disabled" aria-disabled="true">Konsultasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" id="font" aria-current="page" href="Tentang.html">Tentang Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" id="font" aria-current="page" href="Kontak.html">Kontak</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" id="font" aria-current="page" href="BMI.html">BMI</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="core" class="container">
+        <h1>Konsultasi Kesehatan</h1>
+        <div class="doctor-card">
+            <img src="image/doctor1.jpg" alt="Dokter A" class="doctor-photo">
+            <div class="doctor-info">
+                <h2>Dr. Anthony Kristianto</h2>
+                <p>Spesialis Paru</p>
+                <button>Konsultasi</button>
+            </div>
+        </div>
+        <div class="doctor-card">
+            <img src="image/doctor2.jpg" alt="Dokter B" class="doctor-photo">
+            <div class="doctor-info">
+                <h2>Dr. Tirta Mandira Hudhi</h2>
+                <p>Spesialis Bedah</p>
+                <button>Konsultasi</button>
+            </div>
+        </div>
+        <div class="doctor-card">
+            <img src="image/doctor3.jpg" alt="Dokter B" class="doctor-photo">
+            <div class="doctor-info">
+                <h2>Dr. Ivan Halim</h2>
+                <p>Spesialis Anak</p>
+                <button>Konsultasi</button>
+            </div>
+        </div>
+        <div class="doctor-card">
+            <img src="image/doctor4.jpg" alt="Dokter B" class="doctor-photo">
+            <div class="doctor-info">
+                <h2>Dr. Imroatul Ulya</h2>
+                <p>Spesialis Kulit</p>
+                <button>Konsultasi</button>
+            </div>
+        </div>
+        <div class="doctor-card">
+            <img src="image/doctor5.jpg" alt="Dokter B" class="doctor-photo">
+            <div class="doctor-info">
+                <h2>Dr. Tania Maulani</h2>
+                <p>Spesialis Mata</p>
+                <button>Konsultasi</button>
+            </div>
+        </div>
+        <div class="doctor-card">
+            <img src="image/doctor6.jpg" alt="Dokter B" class="doctor-photo">
+            <div class="doctor-info">
+                <h2>Dr. Israyani</h2>
+                <p>Spesialis Gigi</p>
+                <button>Konsultasi</button>
+            </div>
+        </div>
+        <div class="doctor-card">
+            <img src="image/doctor7.jpg" alt="Dokter B" class="doctor-photo">
+            <div class="doctor-info">
+                <h2>Dr. Eka</h2>
+                <p>Spesialis Kedokteran Jiwa</p>
+                <button>Konsultasi</button>
+            </div>
+        </div>
+        <div class="doctor-card">
+            <img src="image/doctor8.jpg" alt="Dokter B" class="doctor-photo">
+            <div class="doctor-info">
+                <h2>Dr. Lisa Musritha</h2>
+                <p>Spesialis Jantung</p>
+                <button>Konsultasi</button>
+            </div>
+        </div>
+
+        <div class="discussion-container">
+            <h2>Diskusi Kesehatan Terbaru</h2>
+
+            <div class="user-question">
+                <div class="question-content">
+                    <p><strong>Siang, Mau bertanya benarkah kalau minum susu saat batuk dapat mengentalkan dahak dan dahak jadi susah dikeluarkan? Trims...</strong></p>
+                    <p>Oleh: Axel</p>
+                </div>
+                <div class="question-response">
+                    <p>Dijawab oleh: Dr. Riza Marlina</p>
+                    <p>1 jam yang lalu</p>
+                </div>
+                <details>
+                    <summary>Lihat jawaban</summary>
+                    <p id="jawaban">Mengonsumsi susu 
+                        saat batuk tidak akan mengentalkan 
+                        dahak yang Anda produksi saat sedang 
+                        batuk, hal ini merupakan suatu mitos. 
+                        Dahak muncul karena kelenjar pada 
+                        saluran nafas lebih aktif memproduksi, 
+                        disertai perubahan jenis sekret yang 
+                        awalnya berupa suatu cairan cair 
+                        menjadi lebih kental. Bila terdapat 
+                        suatu infeksi bakteri, umumnya cairan 
+                        kental ini / dahak akan berubah warna 
+                        menjadi kuning atau hijau. Bila Anda 
+                        mengalami batuk, itu merupakan suatu 
+                        tanda adanya gangguan pada saluran 
+                        nafas Anda, karena batuk merupakan 
+                        salah satu mekanisme pertahanan tubuh. 
+                        Penyebab dari batuk sendiri sangatlah 
+                        beragam. Oleh karena itu kami sarankan 
+                        Anda untuk menemui dokter, agar 
+                        dilakukan pemeriksaan lebih lanjut, 
+                        guna mengetahui secara pasti penyebab 
+                        kondisi Anda, dan mendapat terapi 
+                        yang sesuai.</p>
+                </details>
+            </div>
+
+            <div class="user-question">
+                <div class="question-content">
+                    <p><strong>Dok saya ingin bertanya, saat ini saya sedang mengalami gejala dengan dada yang rasanya mengganjal trs terasa nyeri juga, perut kadang terasa penuh,, itu kenapa ya dok? dan cara obatinya seperti apa? Terimakasih
+                    </strong></p>
+                    <p>Oleh: Sandy</p>
+                </div>
+                <div class="question-response">
+                    <p>Dijawab oleh: Dr. Riza Marlina</p>
+                    <p>2 jam yang lalu</p>
+                </div>
+                <details>
+                    <summary>Lihat jawaban</summary>
+                    <p id="jawaban">Sensasi nyeri, mengganjal, dan penuh di sekitar dada hingga ke perut paling sering muncul akibat suatu gangguan pencernaan, contohnya gastroesophageal reflux disease (GERD), gastritis, tukak lambung, gastroparesis, kanker lambung, tukak duodenum, alergi makanan, obstruksi usus, dan sebagainya.
+
+                        Bukan itu saja, keluhan-keluhan yang Anda rasakan bisa pula timbul karena beragam pencetus lainnya, misalnya penyakit jantung koroner, obesitas, pleuritis, efusi pleura, bronkhitis, hepatitis, gagal jantung kongestif, gangguan cemas berlebih, dan sebagianya.
+                        
+                        </p>
+                </details>
+            </div>
+
+            <div class="user-question">
+                <div class="question-content">
+                    <p><strong>halo dokter mau tanya, saya sedang hamil usia 4 minggu, apakah sudah bisa di USG dok? mohon penjelasannya,thanks dok
+                    </strong></p>
+                    <p>Oleh: Xaviera</p>
+                </div>
+                <div class="question-response">
+                    <p>Dijawab oleh: Dr. Tirta</p>
+                    <p>3 jam yang lalu</p>
+                </div>
+                <details>
+                    <summary>Lihat jawaban</summary>
+                    <p id="jawaban">Alo, terimakasih atas pertanyaannya.
+
+                        USG (ultrasonography) bisa dilakukan sebagai salah satu cara mengevaluasi kesehatan janin dan juga ibu yang mengandungnya. USG ini adalah upaya mendapat gambaran organ dalam dengan memanfaatkan gelombang suara ultra. Untuk mengevaluasi kehamilan, biasanya jenis USG yang dilakukan adalah USG abdomen atau USG transvagina.
+                        
+                        Jika benar Anda hamil, maka USG merupakan cara tepat untuk mengkonfirmasinya. Pemeriksaan ini bisa dilakukan meski usia kandungan Anda baru 4 minggu. Namun, untuk usia kandungan yang masih kecil, biasanya deteksi kehamilan perlu dilakukan tidak dengan USG abdomen biasa, namun dengan USG transvagina. Dari pemeriksaan ini, bisa dievaluasi ukuran dan bentuk kantung kehamilan, anatomi rahim dan organ penyokongnya, luas panggul, dan beberapa aspek lainnya.
+                        
+                        Cobalah konsultasikan kembali hal ini dengan dokter Anda ya..
+                        
+                        Semoga membantu.
+                        
+                        </p>
+                </details>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 Konsultasi Kesehatan Oreo</p>
+            <div class="social-icons" id="sosmed">
+                <a href="#" class="fa fa-facebook" id="fb"></a>
+                <a href="#" class="fa fa-twitter" id="x"></a>
+                <a href="#" class="fa fa-instagram" id="ig"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

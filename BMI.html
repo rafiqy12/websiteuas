@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>BMI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="image/logo.jpg" width="auto" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="font" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" id="font" aria-current="page" href="Artikel.html">Artikel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" id="font" aria-current="page" href="Konsultasi.html">Konsultasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" id="font" aria-current="page" href="Tentang.html">Tentang Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" id="font" aria-current="page" href="Kontak.html">Kontak</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" id="font-disabled" aria-disabled="true">BMI</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        function hitungBMI() {
+            const tinggi = parseFloat(document.getElementById('tinggi').value);
+            const berat = parseFloat(document.getElementById('berat').value);
+            if (isNaN(tinggi)) {
+                const hasilElem = document.getElementById('hasil');
+                hasilElem.innerHTML = '<p style="color: red;">Silakan masukkan nilai tinggi terlebih dahulu.</p>';
+                return;
+            }
+            if (isNaN(berat)) {
+                const hasilElem = document.getElementById('hasil');
+                hasilElem.innerHTML = '<p style="color: red;">Silakan masukkan nilai berat terlebih dahulu.</p>';
+                return;
+            }
+            const bmi = berat / (tinggi * tinggi);
+            const hasilElem = document.getElementById('hasil');
+            hasilElem.innerHTML = `<h5>BMI Anda: ${bmi.toFixed(2)}</h5>`;
+        }
+    </script>
+
+    <div class="container mt-5 mb-5">
+        <h1>Kalkulator BMI</h1>
+        <p>Body Mass Index (BMI) adalah ukuran yang menggambarkan hubungan antara berat badan dan tinggi badan.</p>
+        <p style="color: red;">Masukkan tinggi dalam satuan meter dan berat dalam satuan kilogram:</p>
+        <form id="bmi-form">
+            <div class="form-group">
+                <label for="tinggi">Tinggi (m)</label>
+                <input type="number" step="0.01" class="form-control" id="tinggi" required>
+            </div>
+            <div class="form-group">
+                <label for="berat">Berat (kg)</label>
+                <input type="number" step="0.01" class="form-control" id="berat" required>
+            </div>
+            <button id="hitung" type="button" class="btn" onclick="hitungBMI()">Hitung</button>
+        </form>
+        <div id="hasil" class="mt-3"></div>
+
+        <h2 class="mt-3">Kategori BMI:</h2>
+        <ul>
+            <li>Kurang dari 18.5: Berat badan kurang</li>
+            <li>18.5 - 24.9: Berat badan normal</li>
+            <li>25.0 - 29.9: Berat badan berlebih</li>
+            <li>30.0 atau lebih: Obesitas</li>
+        </ul>
+
+        <h1>Mengapa Memantau Berat Badan dan Kesehatan Penting?</h1>
+
+        <h4>1. Pencegahan Penyakit</h4>
+        <p>Memantau berat badan membantu mencegah risiko penyakit serius seperti diabetes, penyakit jantung, dan hipertensi. Berat badan yang sehat berkontribusi pada sistem kekebalan tubuh yang lebih baik dan mengurangi risiko infeksi.</p>
+    
+        <h4>2. Kualitas Hidup</h4>
+        <p>Berat badan yang seimbang memengaruhi kualitas hidup secara keseluruhan. Orang dengan berat badan normal cenderung memiliki energi lebih, tidur lebih baik, dan merasa lebih baik secara emosional.</p>
+    
+        <h4>3. Pengukuran Kesehatan</h4>
+        <p>Berat badan adalah indikator kesehatan yang sederhana dan mudah diukur. Dengan memantau berat badan, kita dapat mengidentifikasi perubahan yang mungkin memerlukan perhatian lebih lanjut.</p>
+    
+        <h4>4. Pengendalian Berat Badan</h4>
+        <p>Memahami berat badan membantu kita mengendalikan pola makan dan aktivitas fisik. Jika berat badan kita naik atau turun secara signifikan, kita dapat mengambil tindakan yang sesuai.</p>
+    
+        <h4>5. Pencegahan Obesitas</h4>
+        <p>Obesitas adalah masalah kesehatan global yang berkaitan dengan banyak komplikasi. Memantau berat badan membantu mengidentifikasi risiko obesitas dan memungkinkan kita mengambil langkah-langkah pencegahan.</p>
+    
+    </div>
+    
+    <footer class="text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 Konsultasi Kesehatan Oreo</p>
+            <div class="social-icons" id="sosmed">
+                <a href="#" class="fa fa-facebook" id="fb"></a>
+                <a href="#" class="fa fa-twitter" id="x"></a>
+                <a href="#" class="fa fa-instagram" id="ig"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

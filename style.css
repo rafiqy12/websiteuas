@@ -1,0 +1,180 @@
+body {
+  background-color: #ffffff;
+}
+
+#navbarNav ul li a {
+  padding-left: 10px;
+}
+
+#navbar {
+  padding: 0;
+}
+
+#top {
+  background-image: url(image/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+#icon {
+  align-items: center;
+}
+
+.card-body h5,
+p {
+  text-decoration: none;
+}
+
+#font {
+  color: #ffffff;
+}
+
+#font-disabled {
+  background-color: #465488;
+  color: #ffffff;
+}
+
+#click {
+  color: #ffffff;
+}
+
+.container-fluid {
+  background-color: #667bc6;
+}
+
+#fb,
+#x,
+#ig {
+  padding: 20px;
+}
+
+#core {
+  max-width: 800px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+}
+.doctor-card {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+.doctor-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.doctor-info {
+  flex: 1;
+}
+
+.card,
+.list-group-item {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+  padding: 10px;
+}
+
+.card-body {
+  color: #000000;
+  text-decoration: none;
+}
+
+#right li {
+  margin-bottom: 10px;
+}
+
+#left {
+  text-align: left;
+}
+
+.row {
+  margin-bottom: 50px;
+}
+
+.list-group a {
+  color: #000000;
+}
+
+#sosmed a {
+  color: #ffffff;
+}
+
+.form-group {
+  padding-bottom: 20px;
+}
+
+#kirim,
+#hitung {
+  margin-bottom: 20px;
+  background-color: #667bc6;
+  color: #ffffff;
+}
+
+#bot {
+  margin-bottom: 50px;
+}
+
+#team-head {
+  text-align: center;
+}
+
+.team-member {
+  margin-top: 20px;
+  background-color: #ffffff;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+}
+
+.img-fluid {
+  border-radius: 50%;
+  margin: 20px;
+}
+
+.member-info span {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.member-info p {
+  padding-top: 20px;
+}
+
+.social #fb , .social #x, .social #ig {
+  color: #000000;
+  background-color: #9c9c9c;
+  border-radius: 50%;
+  margin-top: 30px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+
+#member1 {
+  padding-bottom: 20px;
+}
+
+.social #fb:hover  {
+  background-color: #008cff;
+  color: #ffffff;
+}
+
+.social #x:hover  {
+  background-color: #008cff;
+  color: #ffffff;
+}
+
+.social #ig:hover  {
+  background-color: #008cff;
+  color: #ffffff;
+}
+
+footer {
+  background-color: #667bc6;
+  color: #ffffff;
+}
+
+
+
+
+
